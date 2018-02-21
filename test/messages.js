@@ -63,7 +63,7 @@ describe('messages library', function() {
      'text properties. It returns a copy of the message with matching username'+
      ' and text properties and an _id property.',function(done){
     const MESSAGE_IDX = 0;
-    messages.create(validMessages[MESSAGE_IDX],function(err,res){
+    messages.create(validMessages[MESSAGE_IDX], function(err,res){
       expect(err).to.be.null;
       expect(res).to.be.an('object');
 
@@ -99,7 +99,6 @@ describe('messages library', function() {
    });
 
   /* 1.3 Remaining CRUD functions */
-  /*
   it('messages.readUsername() reads all messages created by messages.create()' +
      ' by the user with specified username.', function(done){
        const READ_USER_IDX = 0;
@@ -212,7 +211,6 @@ describe('messages library', function() {
          });
        });
    });
-  */
 
   /* 1.4 Data validation */
   /*
