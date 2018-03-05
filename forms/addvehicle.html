@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "UTF-8"/>
+		<title>Add a vehicle</title>
+	</head>
+	<body>
+		<form method = "POST" action = "addvehicle.php">
+			<input type = "hidden" name = "submitted" value = "true"/>
+			<input type = "text" name = "reg_no" placeholder = "reg no"/>
+			<select type = "text" name = "brand">
+				<option value = "volvo">volvo</option>
+			</select>			
+			<input type = "text" name = "daily_rate" placeholder = "daily rate"/>
+			<input type = "radio" name = "category" value = "car"/> Car
+			<input type = "radio" name = "category" value = "truck"/> Truck
+			<input type = "text" name = "description" placeholder = "desc"/>
+			<input type = "submit" value = "submit"/>
+			<input type = "reset" value = "reset"/>
+		</form>
+	</body>
+</html>
